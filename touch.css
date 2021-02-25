@@ -1,0 +1,16 @@
+.eng{
+  color: black;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: Regular;
+  font-size: 48px;
+  margin-bottom:20px;
+  text-align: center;
+}
+.sub{
+  color: black;
+  font-family: 'Roboto';
+  font-weight: Regular;
+  font-size: 20px;
+  text-align: center;
+
+}

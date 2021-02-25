@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Watchimg Computer</title>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<style>
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+}
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
+.eng{
+  color: black;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: Regular;
+  font-size: 48px;
+  margin-bottom:20px;
+  text-align: center;
+}
+.sub{
+  color: black;
+  font-family: 'Roboto';
+  font-weight: Regular;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+</style>
+<script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+    </script>
+</head>
+ 
+<body>
+    <div class="eng">You're looking great today.</div>
+    <div class="sub">오늘 기분이 좋아보이시네요.</div>
+<div id="container">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+</div>
+<script>
+
+</script>
+</body>
+</html>
