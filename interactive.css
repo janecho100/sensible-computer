@@ -64,3 +64,28 @@ body{
     margin-top:50px;
     text-align: center;
 }    
+
+.text{
+    position: relative;
+    color: black;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: Regular;
+    font-size: 18px;
+    text-align: center;
+    top: 900px;
+}
+
+.read{
+    text-decoration: none;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    transition: opacity 1s;
+    float: right;
+}
+.read:hover{
+    opacity: 50%;
+}
